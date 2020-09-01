@@ -63,7 +63,7 @@ function requisito3(vet){ // vet aponta para vetor
 function requisito4(vet){ // vet aponta para vetor
     var qtde = 0
     for(var i=0;i<vet.length;i++){
-        if (((vet[i].sexo == "F") && (vet[i].idade >= 20) && (vet[i].idade <= 40)) 
+        if (((vet[i].sexo == "F") && (vet[i].idade >= 20) && (vet[i].idade <= 45)) 
             || 
         (vet[i].olhos == "V") && (vet[i].altura < 1.70)){
             qtde++
@@ -72,5 +72,11 @@ function requisito4(vet){ // vet aponta para vetor
     console.log(qtde)
 }
 function requisito5(vet){ // vet aponta para vetor
-    
+    var qtde = 0
+    for(var i=0;i<vet.length;i++){
+        if (vet[i].sexo == "M"){
+            qtde++
+        }
+    }
+    console.log(qtde/vet.length*100)
 }
