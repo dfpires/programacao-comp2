@@ -51,8 +51,15 @@ function requisito2(vet){ // vet aponta para vetor
 }
 
 function requisito3(vet){ // vet aponta para vetor
-    
+    var maior = vet[0].idade
+    for(var i=1;i<vet.length;i++){
+        if (vet[i].idade > maior){
+            maior = vet[i].idade
+        }
+    }
+    console.log(`Maior idade ${maior}`)
 }
+
 function requisito4(vet){ // vet aponta para vetor
     
 }
